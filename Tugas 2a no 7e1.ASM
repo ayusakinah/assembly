@@ -1,0 +1,9 @@
+CLO
+	MOV	BL,C0
+Rep:
+	IN	00
+	MOV	[BL],AL
+	INC	BL
+	CMP	AL,0D
+	JNZ	Rep
+END
